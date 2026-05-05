@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>HomeRenoGTA | Professional Painting Contractor – Toronto & GTA</title>
+<meta name="description" content="HomeRenoGTA is a professional painting contractor serving Toronto, North York, Vaughan, Markham, Mississauga and the Greater Toronto Area. Interior painting, exterior painting, condo painting, popcorn ceiling removal, and drywall repair."/>
+<meta name="keywords" content="Toronto painting contractor, interior painting Toronto, exterior painting Toronto, condo painting Toronto, popcorn ceiling removal GTA, drywall repair Toronto, painting company Toronto, professional painters GTA, GTA painting services, house painting Toronto, ceiling repair Toronto, stucco ceiling removal Toronto"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --w:#fff;--off:#F6F4F1;--cream:#EDE8DF;
+  --g100:#ECEAE5;--g200:#D4CFC7;--g400:#9E9990;--g600:#686360;
+  --dark:#1C1A18;--dark2:#252320;
+  --gold:#B8914A;--gl:#CDA96A;--gp:#EBE0C8;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.25,.1,.25,1);
+  --r:3px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--w);color:var(--dark);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:60px}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%;height:auto}
+.container{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+.eyebrow{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h2.st{font-family:var(--serif);font-size:clamp(1.78rem,2.6vw,2.5rem);font-weight:400;line-height:1.18;color:var(--dark);margin:.6rem 0 .82rem}
+h2.st em{font-style:italic;color:var(--gold)}
+.sub{font-size:.87rem;color:var(--g600);line-height:1.9;max-width:540px}
+.sec{padding:5rem 0}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .58s var(--ease),transform .58s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.25s}.d4{transition-delay:.34s}
+.btn{display:inline-flex;align-items:center;gap:.48rem;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:.82rem 1.75rem;border-radius:var(--r);border:none;cursor:pointer;transition:all .22s;white-space:nowrap}
+.btn-p{background:var(--gold);color:var(--dark)}.btn-p:hover{background:#9d792e;transform:translateY(-1px);box-shadow:0 5px 16px rgba(184,145,74,.3)}
+.btn-olw{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32)}.btn-olw:hover{border-color:rgba(255,255,255,.72);background:rgba(255,255,255,.07)}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .36s var(--ease)}
+.ni{display:flex;align-items:center;justify-content:space-between;padding:1.28rem 1.5rem;max-width:1140px;margin:0 auto}
+header.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 14px rgba(0,0,0,.07)}
+header.solid .ni{padding:.85rem 1.5rem}
+.logo{font-family:var(--serif);font-size:1.32rem;font-weight:500;color:#fff;transition:color .36s}
+.logo span{color:var(--gl)}
+header.solid .logo{color:var(--dark)}
+.nav-links{display:flex;align-items:center;gap:1.55rem}
+.nav-links a{font-size:.67rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.78);transition:color .2s}
+header.solid .nav-links a{color:var(--g600)}
+.nav-links a:hover{color:var(--gold)}
+.nav-ph{display:flex;align-items:center;gap:.38rem;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.9);transition:color .36s}
+header.solid .nav-ph{color:var(--dark)}
+.nav-ph svg{width:13px;height:13px;flex-shrink:0}
+.ham{display:none;flex-direction:column;gap:4.5px;cursor:pointer;padding:4px}
+.ham span{width:20px;height:1.5px;background:#fff;transition:background .36s}
+header.solid .ham span{background:var(--dark)}
+.mob-nav{position:fixed;inset:0;background:var(--dark);z-index:110;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.45rem;opacity:0;pointer-events:none;transition:opacity .26s}
+.mob-nav.open{opacity:1;pointer-events:all}
+.mob-nav a{font-family:var(--serif);font-size:1.65rem;color:#fff;transition:color .16s}
+.mob-nav a:hover{color:var(--gl)}
+.mob-close{position:absolute;top:1.3rem;right:1.4rem;background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer}
+.mob-ct{margin-top:.65rem;font-size:.76rem;color:var(--g400);text-align:center}
+.mob-ct a{color:var(--gl);display:block;margin-top:.26rem}
+
+/* STICKY MOBILE BAR */
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--dark2);border-top:1px solid rgba(255,255,255,.07);padding:.58rem 1rem;gap:.52rem}
+.mob-bar a{flex:1;text-align:center;font-size:.67rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.75rem .5rem;border-radius:var(--r);display:flex;align-items:center;justify-content:center;gap:.35rem}
+.mb-call{background:var(--gold);color:var(--dark)}
+.mb-est{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.16)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--dark)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.slide.active{opacity:1}
+.slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);transition:transform 10s ease}
+.slide.active .slide-bg{transform:scale(1)}
+.h-ov{position:absolute;inset:0;background:linear-gradient(110deg,rgba(18,15,13,.82) 0%,rgba(18,15,13,.32) 100%)}
+.hero-content{position:relative;z-index:5;padding:9rem 1.5rem 5rem;max-width:1140px;margin:0 auto;width:100%}
+.h-ey{display:inline-flex;align-items:center;gap:.72rem;font-size:.59rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gl);margin-bottom:1.35rem;opacity:0;animation:fU .7s .32s forwards}
+.h-ey i{display:inline-block;width:22px;height:1px;background:var(--gl);opacity:.6}
+.hero h1{font-family:var(--serif);font-size:clamp(2.3rem,4.8vw,4.35rem);font-weight:400;line-height:1.1;color:#fff;max-width:660px;margin-bottom:1.15rem;opacity:0;animation:fU .8s .48s forwards}
+.hero h1 em{font-style:italic;color:var(--gl)}
+.h-sub{font-size:.92rem;font-weight:300;line-height:1.88;color:rgba(255,255,255,.62);max-width:490px;margin-bottom:2rem;opacity:0;animation:fU .8s .62s forwards}
+.h-btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.8rem;opacity:0;animation:fU .8s .76s forwards}
+.h-trust{display:flex;flex-wrap:wrap;gap:.52rem 1.25rem;opacity:0;animation:fU .8s .9s forwards}
+.htag{font-size:.62rem;color:rgba(255,255,255,.52);display:flex;align-items:center;gap:.34rem}
+.htag::before{content:'✔';color:var(--gl);font-size:.64rem}
+.sl-dots{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);display:flex;gap:.46rem;z-index:6}
+.dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.22);cursor:pointer;transition:all .24s}
+.dot.active{background:var(--gl);transform:scale(1.4)}
+.sl-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:6;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.14);color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
+.sl-arr:hover{background:rgba(184,145,74,.42)}
+.sl-arr.prev{left:1.1rem}.sl-arr.next{right:1.1rem}
+@keyframes fU{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* TRUST BAR */
+.tb{background:var(--dark2);border-top:1px solid rgba(255,255,255,.05)}
+.tb-inner{max-width:1140px;margin:0 auto;padding:1rem 1.5rem;display:flex;justify-content:center;align-items:center;gap:1.6rem;flex-wrap:wrap}
+.tbi{display:flex;align-items:center;gap:.46rem;font-size:.61rem;letter-spacing:.09em;text-transform:uppercase;color:var(--g400)}
+.tbi svg{color:var(--gold);width:11px;height:11px;flex-shrink:0}
+.tb-sep{width:1px;height:12px;background:rgba(255,255,255,.07)}
+
+/* ABOUT */
+.about-bg{background:var(--off)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 18px 52px rgba(0,0,0,.13)}
+.about-img-inset{position:absolute;bottom:-2.2rem;right:-1.8rem;width:52%;aspect-ratio:3/2;object-fit:cover;border:4px solid #fff;border-radius:var(--r);box-shadow:0 10px 34px rgba(0,0,0,.14)}
+.about-badge{position:absolute;top:1.8rem;left:-1.8rem;background:var(--dark);padding:1.3rem 1.2rem;text-align:center;border-radius:var(--r);box-shadow:0 8px 28px rgba(0,0,0,.22)}
+.ab-num{font-family:var(--serif);font-size:2.2rem;color:var(--gl);line-height:1;display:block}
+.ab-lbl{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g400);margin-top:.22rem;display:block}
+.about-text h2{font-size:clamp(2rem,3.2vw,2.9rem);margin:.6rem 0 1.2rem}
+.about-text p{font-size:.87rem;line-height:1.92;color:var(--g600);margin-bottom:.9rem}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.2rem;padding-top:2.2rem;border-top:1px solid var(--g100)}
+.as-val{font-family:var(--serif);font-size:2.4rem;color:var(--dark);line-height:1}
+.as-val sup{font-size:1.1rem;color:var(--gold);vertical-align:super}
+.as-key{font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:var(--g400);margin-top:.28rem}
+
+/* SERVICES */
+.svc-bg{background:var(--w)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--g200);margin-top:2.6rem}
+.sc{background:var(--w);padding:1.65rem 1.55rem 1.85rem;position:relative;overflow:hidden;transition:background .28s;display:flex;flex-direction:column;gap:.75rem}
+.sc::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .32s var(--ease)}
+.sc:hover{background:var(--dark)}.sc:hover::after{transform:scaleX(1)}
+.sc-ico{width:33px;height:33px;background:var(--gp);border-radius:var(--r);display:flex;align-items:center;justify-content:center;transition:background .28s;flex-shrink:0}
+.sc-ico svg{color:var(--gold);width:15px;height:15px;transition:color .28s}
+.sc:hover .sc-ico{background:rgba(255,255,255,.06)}.sc:hover .sc-ico svg{color:var(--gl)}
+.sc-name{font-family:var(--serif);font-size:1.03rem;color:var(--dark);transition:color .28s;line-height:1.32}
+.sc-desc{font-size:.76rem;line-height:1.82;color:var(--g600);transition:color .28s;flex:1}
+.sc-tag{font-size:.57rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);transition:color .28s;margin-top:auto;padding-top:.35rem;border-top:1px solid var(--g100);transition:color .28s,border-color .28s}
+.sc:hover .sc-name,.sc:hover .sc-desc{color:rgba(255,255,255,.78)}
+.sc:hover .sc-tag{color:var(--gl);border-color:rgba(255,255,255,.08)}
+
+/* PROCESS */
+.proc-bg{background:var(--dark)}
+.proc-bg .eyebrow{color:var(--gl)}
+.proc-bg h2.st{color:#fff}
+.proc-bg .sub{color:rgba(255,255,255,.4)}
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:2.8rem}
+.ps{position:relative}
+.ps-img{height:210px;overflow:hidden;position:relative}
+.ps-img img{width:100%;height:100%;object-fit:cover;opacity:.52;transition:opacity .38s,transform .5s var(--ease)}
+.ps:hover .ps-img img{opacity:.68;transform:scale(1.04)}
+.ps-img-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 25%,rgba(18,15,13,.96) 100%)}
+.ps-body{padding:1.5rem 1.4rem 1.9rem;border-right:1px solid rgba(255,255,255,.06)}
+.ps:last-child .ps-body{border-right:none}
+.ps-num{font-family:var(--serif);font-size:2.6rem;color:rgba(184,145,74,.14);line-height:1;margin-bottom:.65rem}
+.ps-bar{width:20px;height:1.5px;background:var(--gold);opacity:.5;margin-bottom:.75rem}
+.ps-title{font-family:var(--serif);font-size:1.02rem;color:#fff;margin-bottom:.5rem;line-height:1.32}
+.ps-text{font-size:.75rem;line-height:1.82;color:rgba(255,255,255,.38)}
+.ps-tag{font-size:.56rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(184,145,74,.42);margin-top:.7rem}
+
+/* PROJECTS */
+.proj-bg{background:var(--off)}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.6rem}
+.pj{border-radius:var(--r);overflow:hidden;background:var(--g100);cursor:default}
+.pj-imgs{display:grid;grid-template-columns:1fr 1fr;height:185px;position:relative}
+.pj-img{overflow:hidden;position:relative}
+.pj-img img{width:100%;height:100%;object-fit:cover;transition:transform .48s var(--ease)}
+.pj:hover .pj-img img{transform:scale(1.04)}
+.pj-lbl{position:absolute;bottom:.44rem;left:.44rem;font-size:.52rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;background:rgba(0,0,0,.52);color:#fff;padding:.18rem .46rem;border-radius:2px;backdrop-filter:blur(4px)}
+.pj-div{position:absolute;top:0;left:50%;width:1.5px;height:100%;background:var(--gold);z-index:2;transform:translateX(-50%)}
+.pj-meta{padding:.78rem .95rem .88rem}
+.pj-title{font-size:.76rem;font-weight:600;color:var(--dark);margin-bottom:.15rem;line-height:1.35}
+.pj-type{font-size:.62rem;color:var(--g400);letter-spacing:.05em;text-transform:uppercase}
+
+/* AREAS */
+.areas-bg{background:var(--dark)}
+.areas-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.areas-inner h2.st{color:#fff}
+.areas-inner .sub{color:rgba(255,255,255,.42)}
+.pills{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r);padding:1.6rem;display:flex;flex-wrap:wrap;gap:.44rem}
+.pill{font-size:.67rem;font-weight:400;padding:.38rem .78rem;border-radius:20px;border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.52);transition:all .18s;cursor:default}
+.pill:hover,.pill.hl{background:var(--gold);border-color:var(--gold);color:var(--dark);font-weight:600}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--g200);margin-top:2.6rem}
+.wi{background:var(--w);padding:1.55rem 1.75rem;display:flex;gap:.85rem;align-items:flex-start;transition:background .22s}
+.wi:hover{background:var(--cream)}
+.wi-ico{width:36px;height:36px;background:var(--gp);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.04rem}
+.wi-ico svg{color:var(--gold);width:15px;height:15px}
+.wi-title{font-size:.83rem;font-weight:600;color:var(--dark);margin-bottom:.24rem}
+.wi-text{font-size:.75rem;line-height:1.76;color:var(--g600)}
+
+/* REVIEWS */
+.rev-bg{background:var(--cream)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.6rem}
+.rc{background:var(--w);border-radius:var(--r);padding:1.55rem;box-shadow:0 1px 8px rgba(0,0,0,.05);border-bottom:2px solid transparent;transition:all .24s}
+.rc:hover{border-bottom-color:var(--gold);transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,.09)}
+.rc-g{display:flex;align-items:center;gap:.36rem;font-size:.57rem;color:var(--g400);margin-bottom:.72rem;letter-spacing:.05em;text-transform:uppercase}
+.rc-g svg{width:10px;height:10px}
+.rc-stars{color:var(--gold);font-size:.77rem;margin-bottom:.75rem}
+.rc-text{font-family:var(--serif);font-size:.93rem;font-style:italic;line-height:1.72;color:var(--dark2);margin-bottom:1.15rem}
+.rc-auth{display:flex;align-items:center;gap:.7rem}
+.rc-av{width:35px;height:35px;border-radius:50%;background:var(--gp);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.88rem;color:var(--gold);font-weight:500;flex-shrink:0}
+.rc-name{font-size:.77rem;font-weight:600;color:var(--dark)}
+.rc-loc{font-size:.63rem;color:var(--g400);margin-top:.09rem}
+
+/* FAQ */
+.faq-bg{background:var(--off)}
+.faq-wrap{max-width:720px;margin:2.4rem auto 0;display:flex;flex-direction:column;gap:1px;background:var(--g200)}
+.faq-item{background:var(--w)}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:1.15rem 1.45rem;font-family:var(--sans);font-size:.84rem;font-weight:600;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color .18s;line-height:1.4}
+.faq-q:hover,.faq-q.open{color:var(--gold)}
+.faq-arr{width:16px;height:16px;flex-shrink:0;transition:transform .24s var(--ease);color:var(--g400)}
+.faq-q.open .faq-arr{transform:rotate(180deg);color:var(--gold)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .32s var(--ease)}
+.faq-ai{padding:0 1.45rem 1.25rem;font-size:.81rem;line-height:1.88;color:var(--g600);border-top:1px solid var(--g100)}
+
+/* CTA BAND */
+.cta-band{background:var(--dark);text-align:center;padding:4.8rem 1.5rem;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 85% at 50% 120%,rgba(184,145,74,.09),transparent 70%)}
+.cta-band h2{font-family:var(--serif);font-size:clamp(1.85rem,3.4vw,2.7rem);color:#fff;margin-bottom:.82rem}
+.cta-band h2 em{font-style:italic;color:var(--gl)}
+.cta-band p{font-size:.85rem;color:rgba(255,255,255,.43);max-width:400px;margin:0 auto 2rem;line-height:1.88}
+.cta-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4.5rem;align-items:start}
+.ci h2.st{margin-bottom:.82rem}
+.ci p{font-size:.85rem;line-height:1.9;color:var(--g600);margin-bottom:1.55rem}
+.c-rows{display:flex;flex-direction:column;gap:.88rem;margin-bottom:1.6rem}
+.c-row{display:flex;align-items:flex-start;gap:.82rem}
+.c-ico{width:35px;height:35px;background:var(--g100);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.c-ico svg{color:var(--gold);width:13px;height:13px}
+.c-lbl{font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g400);margin-bottom:.11rem}
+.c-val{font-size:.84rem;color:var(--dark)}
+.c-val a{color:var(--dark);transition:color .16s}.c-val a:hover{color:var(--gold)}
+.wa-btn{display:inline-flex;align-items:center;gap:.52rem;background:transparent;color:var(--dark);font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.68rem 1.25rem;border-radius:var(--r);border:1.5px solid var(--g200);transition:all .2s}
+.wa-btn:hover{border-color:var(--gold);color:var(--gold)}
+.wa-btn svg{width:14px;height:14px;color:var(--gold);flex-shrink:0}
+.map-box{border-radius:var(--r);overflow:hidden;border:1px solid var(--g200);margin-top:1.4rem}
+.map-box iframe{display:block;width:100%;height:220px;border:none}
+.form{display:flex;flex-direction:column;gap:.78rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.78rem}
+.fg label{display:block;font-size:.55rem;letter-spacing:.11em;text-transform:uppercase;color:var(--g600);font-weight:500;margin-bottom:.28rem}
+.fg input,.fg select,.fg textarea{font-family:var(--sans);font-size:.82rem;background:var(--off);border:1px solid var(--g200);color:var(--dark);padding:.72rem .92rem;border-radius:var(--r);outline:none;width:100%;transition:border .16s,box-shadow .16s}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--g400)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,145,74,.08);background:var(--w)}
+.fg textarea{resize:vertical;min-height:96px}
+.fg select{appearance:none;cursor:pointer}
+.sub-btn{font-family:var(--sans);font-size:.67rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--dark);color:#fff;border:none;cursor:pointer;padding:.9rem 1.8rem;border-radius:var(--r);display:flex;align-items:center;gap:.5rem;transition:all .22s;align-self:flex-start}
+.sub-btn:hover{background:var(--gold);color:var(--dark)}
+.sub-btn svg{width:11px;height:11px;stroke-width:2}
+#fMsg{font-size:.73rem;color:var(--gold);margin-top:.28rem;display:none}
+
+/* FOOTER */
+footer{background:#131110;color:rgba(255,255,255,.32)}
+.ft{max-width:1140px;margin:0 auto;padding:3.2rem 1.5rem 2.2rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.2rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.f-brand{font-family:var(--serif);font-size:1.22rem;color:#fff;margin-bottom:.68rem;display:block}
+.f-brand span{color:var(--gl)}
+.f-tagline{font-size:.72rem;color:rgba(184,145,74,.6);letter-spacing:.04em;margin-bottom:.7rem;font-style:italic}
+.f-desc{font-size:.73rem;line-height:1.78;max-width:218px;margin-bottom:.9rem}
+.f-addr{font-size:.68rem;color:rgba(255,255,255,.18);margin-bottom:.9rem;line-height:1.6}
+.f-socs{display:flex;gap:.58rem}
+.f-soc{width:31px;height:31px;border-radius:50%;border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;transition:all .18s;cursor:pointer}
+.f-soc:hover{background:var(--gold);border-color:var(--gold)}
+.f-soc svg{width:13px;height:13px;color:rgba(255,255,255,.38);transition:color .18s}
+.f-soc:hover svg{color:var(--dark)}
+.fc h4{font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;font-weight:500;margin-bottom:.88rem}
+.fc a{display:block;font-size:.72rem;color:rgba(255,255,255,.32);margin-bottom:.44rem;transition:color .16s}
+.fc a:hover{color:var(--gl)}
+.f-seo-strip{max-width:1140px;margin:0 auto;padding:.75rem 1.5rem;font-size:.6rem;color:rgba(255,255,255,.13);line-height:1.7;border-bottom:1px solid rgba(255,255,255,.04)}
+.fb{max-width:1140px;margin:0 auto;padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.63rem;flex-wrap:wrap;gap:.45rem}
+.fb a{color:var(--gl)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-steps{grid-template-columns:1fr 1fr}
+  .ps-body{border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
+  .proj-grid{grid-template-columns:1fr 1fr}
+  .about-grid,.areas-inner,.contact-grid{grid-template-columns:1fr;gap:2.8rem}
+  .about-img-wrap{max-width:480px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr;gap:1.8rem}
+}
+@media(max-width:768px){
+  .nav-links,.nav-ph{display:none}
+  .ham{display:flex}
+  .mob-bar{display:flex}
+  body{padding-bottom:60px}
+  .sec{padding:3.5rem 0}
+  .svc-grid{grid-template-columns:1fr}
+  .proc-steps{grid-template-columns:1fr}
+  .ps-body{border-bottom:1px solid rgba(255,255,255,.06)}
+  .proj-grid,.rev-grid,.why-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .about-img-inset,.about-badge{display:none}
+  .ft{grid-template-columns:1fr;gap:1.5rem}
+  .fb{flex-direction:column;text-align:center}
+  .sl-arr{display:none}
+  .hero h1{font-size:2.25rem}
+  .hero-content{padding:7.5rem 1.2rem 4rem}
+  .tb-sep{display:none}
+  .tb-inner{gap:.9rem .8rem}
+}
+@media(max-width:480px){
+  .h-btns,.cta-btns{flex-direction:column;align-items:flex-start}
+  .cta-btns{align-items:center}
+  .pills{padding:1.1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" id="mobClose">&#x2715;</button>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#process">Process</a>
+  <a href="#projects">Projects</a>
+  <a href="#areas">Areas</a>
+  <a href="#why">Why Us</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <div class="mob-ct">
+    <a href="tel:6479360911">(647) 936-0911</a>
+    <a href="mailto:homerenogta2010@gmail.com">homerenogta2010@gmail.com</a>
+  </div>
+</div>
+
+<!-- MOBILE BAR -->
+<div class="mob-bar" id="mobBar">
+  <a href="tel:6479360911" class="mb-call">
+    <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    Call Now
+  </a>
+  <a href="#contact" class="mb-est">Free Estimate</a>
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="ni">
+    <a href="#" class="logo">HomeReno<span>GTA</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#projects">Projects</a>
+      <a href="#areas">Areas</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <a href="tel:6479360911" class="nav-ph">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      (647) 936-0911
+    </a>
+    <div class="ham" id="ham"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="slide active"><div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80')"></div><div class="h-ov"></div></div>
+  <div class="slide"><div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80')"></div><div class="h-ov"></div></div>
+  <div class="slide"><div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1920&q=80')"></div><div class="h-ov"></div></div>
+  <div class="slide"><div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1920&q=80')"></div><div class="h-ov"></div></div>
+  <button class="sl-arr prev" id="slPrev"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <button class="sl-arr next" id="slNext"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+  <div class="hero-content">
+    <div class="h-ey"><i></i>Painting Contractor — Toronto & Greater Toronto Area<i></i></div>
+    <h1>Professional Painting<br>Services in <em>Toronto & GTA</em></h1>
+    <p class="h-sub">Interior & exterior painting, condo and office painting, drywall repair, ceiling repair, and popcorn ceiling removal — done right across Toronto, North York, Vaughan, Markham, Mississauga and the GTA.</p>
+    <div class="h-btns">
+      <a href="#contact" class="btn btn-p">Get Free Estimate</a>
+      <a href="tel:6479360911" class="btn btn-olw">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <div class="h-trust">
+      <span class="htag">Free Estimates</span>
+      <span class="htag">Clean Professional Finish</span>
+      <span class="htag">Fast Response</span>
+      <span class="htag">Same Week Availability</span>
+    </div>
+  </div>
+  <div class="sl-dots" id="slDots"></div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="tb">
+  <div class="tb-inner">
+    <div class="tbi"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>5-Star Rated on Google</div>
+    <div class="tb-sep"></div>
+    <div class="tbi"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Painting Contractor Since 2010</div>
+    <div class="tb-sep"></div>
+    <div class="tbi"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>Benjamin Moore Products</div>
+    <div class="tb-sep"></div>
+    <div class="tbi"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Satisfaction Guaranteed</div>
+    <div class="tb-sep"></div>
+    <div class="tbi"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>Houses · Condos · Offices</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="sec about-bg" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-badge">
+          <span class="ab-num">15+</span>
+          <span class="ab-lbl">Years Serving GTA</span>
+        </div>
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=75" alt="HomeRenoGTA professional painter North York Toronto" loading="lazy"/>
+        <img class="about-img-inset" src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=75" alt="Fresh interior painting result" loading="lazy"/>
+      </div>
+      <div class="about-text reveal d1">
+        <div class="eyebrow">About HomeRenoGTA</div>
+        <h2 class="st">A Toronto Painting Contractor<br>Built on <em>Preparation</em></h2>
+        <p>HomeRenoGTA is a professional painting company serving homeowners, condo owners, and businesses across Toronto and the Greater Toronto Area. We've been doing this since 2010, and our reputation is built on one thing that most painters rush past: the prep work.</p>
+        <p>We specialize in interior and exterior painting, condo painting, office painting, popcorn ceiling removal, drywall repair, and water damage restoration. From a freshly painted condo in Etobicoke to a full exterior repaint in Richmond Hill — every project gets the same care, the same materials, and the same crew. No subcontractors.</p>
+        <p>Serving Toronto, North York, Vaughan, Markham, Mississauga, Oakville, Ajax, and the rest of the GTA — with the same quality on every job, in every neighbourhood.</p>
+        <div class="about-stats">
+          <div><div class="as-val">600<sup>+</sup></div><div class="as-key">Projects Completed</div></div>
+          <div><div class="as-val">98<sup>%</sup></div><div class="as-key">Client Satisfaction</div></div>
+          <div><div class="as-val">15<sup>yr</sup></div><div class="as-key">In Business</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svc-bg" id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Painting Services</div>
+      <h2 class="st">Professional <em>Painting & Repair</em><br>Services Across the GTA</h2>
+      <p class="sub">From interior painting in Toronto condos to full exterior repaints in Vaughan and Markham — every job is completed with proper preparation, premium materials, and a finish that lasts.</p>
+    </div>
+    <div class="svc-grid reveal d1">
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="sc-name">Interior Painting</div>
+        <p class="sc-desc">Complete interior painting services for houses and condos across Toronto and the GTA. Proper surface prep, premium Benjamin Moore finishes, and results that hold up for years.</p>
+        <div class="sc-tag">Attention to Detail · Clean Job Sites</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.522 4.82 3.889 6.17l-.6 2.715 3.167-1.406A9.91 9.91 0 0012 17.769c4.97 0 9-3.184 9-7.115S16.97 3 12 3z"/></svg></div>
+        <div class="sc-name">Exterior Painting</div>
+        <p class="sc-desc">Exterior painting for homes in Toronto, Mississauga, Oakville, and across the GTA. Weather-resistant coatings, expert caulking, and a durable finish built for Canadian seasons.</p>
+        <div class="sc-tag">Premium Materials · Long-Lasting Results</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+        <div class="sc-name">Condo Painting</div>
+        <p class="sc-desc">Condo painting in Toronto, Vaughan, Richmond Hill, and beyond. Dust-controlled, fully masked work with proper cleanup — ideal for pre-sale preparation and move-in refresh.</p>
+        <div class="sc-tag">Same Week Availability · Reliable Scheduling</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+        <div class="sc-name">Office Painting</div>
+        <p class="sc-desc">Office and commercial painting in Toronto and surrounding GTA areas. We work around your schedule to minimize disruption, keeping the site clean from start to finish.</p>
+        <div class="sc-tag">Reliable Scheduling · Professional Results</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></div>
+        <div class="sc-name">Popcorn & Stucco Ceiling Removal</div>
+        <p class="sc-desc">One of the most popular upgrades in older GTA homes. Safe, dust-controlled popcorn and stucco ceiling removal leaving a smooth modern surface — ready for a fresh coat of paint.</p>
+        <div class="sc-tag">Clean Job Sites · Modern Finish</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M8 3v18M16 3v18"/></svg></div>
+        <div class="sc-name">Drywall & Wall Repair</div>
+        <p class="sc-desc">Drywall repair services across Toronto, Scarborough, Etobicoke, and the GTA. Holes, cracks, nail pops — patched and blended so seamlessly you won't find the old damage.</p>
+        <div class="sc-tag">Attention to Detail · Seamless Finish</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg></div>
+        <div class="sc-name">Surface Prep & Priming</div>
+        <p class="sc-desc">Sanding, filling, caulking, and priming — the step that separates a mediocre paint job from one that actually lasts. We spend more time on prep than most contractors spend on the whole job.</p>
+        <div class="sc-tag">Professional Results · Premium Finish</div>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="sc-name">Water Damage Repair</div>
+        <p class="sc-desc">Ceiling and wall restoration from water damage — across Toronto, Brampton, Ajax, and the rest of the GTA. We repair, prime with stain-blocker, and restore surfaces to like-new before painting.</p>
+        <div class="sc-tag">Reliable Service · Complete Restoration</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec proc-bg" id="process">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">How We Work</div>
+      <h2 class="st" style="color:#fff">Our <em>Process</em></h2>
+      <p class="sub">A clear, straightforward approach from first call to final walkthrough — no surprises, no shortcuts.</p>
+    </div>
+    <div class="proc-steps reveal d1">
+      <div class="ps">
+        <div class="ps-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=70" alt="Free estimate visit" loading="lazy"/><div class="ps-img-ov"></div></div>
+        <div class="ps-body">
+          <div class="ps-num">01</div><div class="ps-bar"></div>
+          <div class="ps-title">Free Estimate</div>
+          <p class="ps-text">We visit your home or office, walk through the project in person, and provide a clear written estimate within 24 hours. No phone guesses. Same week availability across the GTA.</p>
+          <div class="ps-tag">Same Week Availability</div>
+        </div>
+      </div>
+      <div class="ps">
+        <div class="ps-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70" alt="Surface preparation and masking" loading="lazy"/><div class="ps-img-ov"></div></div>
+        <div class="ps-body">
+          <div class="ps-num">02</div><div class="ps-bar"></div>
+          <div class="ps-title">Preparation & Protection</div>
+          <p class="ps-text">Floors, furniture, and trim are fully masked before we start. Every surface is patched, sanded, and primed. Quality preparation is the foundation of every lasting paint job.</p>
+          <div class="ps-tag">Attention to Detail</div>
+        </div>
+      </div>
+      <div class="ps">
+        <div class="ps-img"><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=70" alt="Professional painting in progress" loading="lazy"/><div class="ps-img-ov"></div></div>
+        <div class="ps-body">
+          <div class="ps-num">03</div><div class="ps-bar"></div>
+          <div class="ps-title">Professional Painting</div>
+          <p class="ps-text">Clean, even coats using premium Benjamin Moore products. Crisp edges, smooth finishes, and careful work throughout. We don't rush. A proper finish takes the time it takes.</p>
+          <div class="ps-tag">Premium Materials</div>
+        </div>
+      </div>
+      <div class="ps">
+        <div class="ps-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=70" alt="Finished painting project" loading="lazy"/><div class="ps-img-ov"></div></div>
+        <div class="ps-body">
+          <div class="ps-num">04</div><div class="ps-bar"></div>
+          <div class="ps-title">Walkthrough & Cleanup</div>
+          <p class="ps-text">We inspect every surface with you before calling the job done. All materials removed, the space left spotless. We're not finished until you're satisfied with every detail.</p>
+          <div class="ps-tag">Clean Job Sites</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT PROJECTS -->
+<section class="sec proj-bg" id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Recent Projects</div>
+      <h2 class="st">Work Completed Across <em>Toronto & GTA</em></h2>
+      <p class="sub">A sample of recent painting and ceiling projects completed for homeowners across the Greater Toronto Area. Real projects, real results — placeholder photos to be replaced shortly.</p>
+    </div>
+    <div class="proj-grid reveal d1">
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.26) brightness(.7)"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=480&q=70" alt="Before — North York living room" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=480&q=70" alt="After — North York living room" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Full Interior Repaint — North York, Toronto</div>
+          <div class="pj-type">Interior Painting · 3-Bedroom House</div>
+        </div>
+      </div>
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.22) brightness(.66)"><img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=480&q=70" alt="Before — Vaughan bedroom" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=480&q=70" alt="After — Vaughan bedroom" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Popcorn Ceiling Removal + Repaint — Vaughan</div>
+          <div class="pj-type">Ceiling Removal · Full Home Repaint</div>
+        </div>
+      </div>
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.2) brightness(.63)"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=480&q=70" alt="Before — Markham kitchen" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=480&q=70" alt="After — Markham kitchen" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Drywall Repair + Kitchen Repaint — Markham</div>
+          <div class="pj-type">Drywall Repair · Interior Painting</div>
+        </div>
+      </div>
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.24) brightness(.68)"><img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=480&q=70" alt="Before — Richmond Hill exterior" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=480&q=70" alt="After — Richmond Hill exterior" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Exterior House Painting — Richmond Hill</div>
+          <div class="pj-type">Exterior Painting · Full Home</div>
+        </div>
+      </div>
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.2) brightness(.65)"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=480&q=70" alt="Before — Mississauga condo" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=480&q=70" alt="After — Mississauga condo" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Condo Interior Repaint — Mississauga</div>
+          <div class="pj-type">Condo Painting · Pre-Sale Preparation</div>
+        </div>
+      </div>
+      <div class="pj">
+        <div class="pj-imgs">
+          <div class="pj-img" style="filter:saturate(.18) brightness(.62)"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=480&q=70" alt="Before — Etobicoke water damage" loading="lazy"/><span class="pj-lbl">Before</span></div>
+          <div class="pj-img"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=480&q=70" alt="After — Etobicoke water damage" loading="lazy"/><span class="pj-lbl">After</span></div>
+          <div class="pj-div"></div>
+        </div>
+        <div class="pj-meta">
+          <div class="pj-title">Water Damage Ceiling Repair — Etobicoke</div>
+          <div class="pj-type">Water Damage Repair · Ceiling Restoration</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="sec areas-bg" id="areas">
+  <div class="container">
+    <div class="areas-inner">
+      <div class="reveal">
+        <div class="eyebrow" style="color:var(--gl)">Service Coverage</div>
+        <h2 class="st" style="color:#fff">Areas We <em>Serve</em></h2>
+        <p class="sub" style="color:rgba(255,255,255,.42)">We're a local GTA painting company — our own crew handles every project, no subcontractors. The same quality of work whether we're painting a condo in Toronto or a house in Stouffville.</p>
+        <div style="margin-top:1.8rem"><a href="#contact" class="btn btn-p">Get a Free Estimate</a></div>
+      </div>
+      <div class="pills reveal d1">
+        <div class="pill hl">Toronto</div><div class="pill hl">North York</div><div class="pill">Scarborough</div><div class="pill">Etobicoke</div><div class="pill hl">Vaughan</div><div class="pill">Woodbridge</div><div class="pill">Kleinburg</div><div class="pill">Maple</div><div class="pill hl">Richmond Hill</div><div class="pill hl">Markham</div><div class="pill">Thornhill</div><div class="pill">Unionville</div><div class="pill">Stouffville</div><div class="pill">Aurora</div><div class="pill">Newmarket</div><div class="pill">King City</div><div class="pill hl">Mississauga</div><div class="pill">Brampton</div><div class="pill">Bolton</div><div class="pill">Oakville</div><div class="pill">Burlington</div><div class="pill">Milton</div><div class="pill">Georgetown</div><div class="pill hl">Pickering</div><div class="pill hl">Ajax</div><div class="pill">Whitby</div><div class="pill">Oshawa</div><div class="pill">Barrie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec" id="why">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Why HomeRenoGTA</div>
+      <h2 class="st">What Sets Our <em>Painting Services Apart</em></h2>
+      <p class="sub">We're not the cheapest painting company in the GTA — and we're not trying to be. We're the one you call when you want it done right the first time.</p>
+    </div>
+    <div class="why-grid reveal d1">
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div><div><div class="wi-title">Free In-Home Estimates</div><p class="wi-text">We visit in person, assess the scope properly, and provide a detailed written estimate — no vague phone quotes. You know exactly what you're getting before you commit.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><div class="wi-title">Fast Response & Same Week Availability</div><p class="wi-text">We respond within one business day. For most projects across Toronto and the GTA, same-week scheduling is available. No weeks of waiting for a callback.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg></div><div><div class="wi-title">Premium Benjamin Moore Products</div><p class="wi-text">We use Benjamin Moore on every project. Better coverage, better durability, better result. It's the product your walls deserve and the one that still looks great in five years.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><div><div class="wi-title">Attention to Detail</div><p class="wi-text">Sharp, clean lines on trim, baseboards, and edges. Properly masked surfaces. We notice and fix the small things — because in painting, the small things are what people actually see.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div><div><div class="wi-title">Reliable Scheduling</div><p class="wi-text">We show up on the day we say, and we give you a realistic project timeline before we start. Your time is respected on every project, large and small.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div><div><div class="wi-title">Clean Job Sites, Always</div><p class="wi-text">Floors and furniture fully protected. Work area kept tidy throughout. Full cleanup when we're done. We treat your space with care — and we leave it better than we found it.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><div><div class="wi-title">Satisfaction Guaranteed</div><p class="wi-text">We don't consider a project closed until you're genuinely happy with the result. If something isn't right, we come back and we fix it — that's not a promise we've had to keep very often.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><div class="wi-title">Truly Local — No Subcontractors</div><p class="wi-text">Our own crew handles every project from estimate to cleanup. No subcontractors, no handoffs, no surprises. You get the same team and the same standard from start to finish.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec rev-bg" id="reviews">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <div class="eyebrow" style="display:flex;justify-content:center">Google Reviews</div>
+      <h2 class="st" style="text-align:center;max-width:100%">What GTA Homeowners <em>Say</em></h2>
+    </div>
+    <div class="rev-grid reveal d1">
+      <div class="rc">
+        <div class="rc-g"><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Review</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"They removed the popcorn ceiling throughout our entire main floor and repainted everything. The difference is unbelievable — it looks like a brand new home. The crew was clean, professional, and great to deal with."</p>
+        <div class="rc-auth"><div class="rc-av">M</div><div><div class="rc-name">Marina T.</div><div class="rc-loc">North York, Toronto</div></div></div>
+      </div>
+      <div class="rc">
+        <div class="rc-g"><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Review</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Used them to repaint my condo in Vaughan before listing it. The surface prep and patching were genuinely impressive — the walls looked perfect. Sold above asking. Would absolutely hire again."</p>
+        <div class="rc-auth"><div class="rc-av">A</div><div><div class="rc-name">Alex P.</div><div class="rc-loc">Vaughan, Ontario</div></div></div>
+      </div>
+      <div class="rc">
+        <div class="rc-g"><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Review</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"We had water damage on two ceilings in our Etobicoke home. They repaired the drywall, primed with stain-blocker, and painted — you genuinely can't tell anything happened. On time and a spotless cleanup."</p>
+        <div class="rc-auth"><div class="rc-av">R</div><div><div class="rc-name">Robert & Lisa K.</div><div class="rc-loc">Etobicoke, Toronto</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq-bg" id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <div class="eyebrow" style="display:flex;justify-content:center">FAQ</div>
+      <h2 class="st" style="text-align:center;max-width:100%">Common <em>Questions</em></h2>
+      <p class="sub" style="margin:0 auto;text-align:center">Questions we hear regularly from homeowners across Toronto and the GTA.</p>
+    </div>
+    <div class="faq-wrap reveal d1">
+      <div class="faq-item">
+        <button class="faq-q">How much does interior painting cost in Toronto?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Interior painting in Toronto typically ranges from $300–$600 per room depending on size, ceiling height, surface condition, and finish quality. A full home repaint (3–4 bedrooms) generally runs between $2,500–$7,000+. We provide free in-home estimates with clear, itemized pricing — no vague ranges or hidden add-ons.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you provide free estimates?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Yes — all estimates are completely free with no obligation. We visit your home or condo in person, walk through the project with you, and provide a detailed written quote within 24 hours. Same-week estimate availability across Toronto and the GTA.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does a painting project usually take?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">A single room typically takes 1–2 days. A full interior repaint on a 3–4 bedroom house usually runs 3–5 days. Popcorn ceiling removal adds time for drying and surface repair. We give you a realistic project timeline before starting and we stick to it.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you repair drywall before painting?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Yes — surface preparation is the foundation of everything we do. We patch holes, fill cracks, repair nail pops, and sand every surface before priming. Drywall and wall repair can be included in your painting estimate or booked as a standalone service across the GTA.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you remove popcorn ceilings in Toronto and GTA?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Yes — popcorn ceiling removal is one of our most requested services across the GTA, particularly in older homes in North York, Scarborough, Etobicoke, and Mississauga. We use proper dust containment, repair the surface after removal, prime, and leave a smooth modern finish ready for paint.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What areas of the GTA do you serve?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">We serve all of Toronto and the Greater Toronto Area including North York, Scarborough, Etobicoke, Vaughan, Woodbridge, Kleinburg, Markham, Richmond Hill, Thornhill, Aurora, Newmarket, Stouffville, Mississauga, Brampton, Bolton, Oakville, Burlington, Milton, Georgetown, Pickering, Ajax, Whitby, Oshawa, and surrounding areas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you available on weekends?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Yes. We're available Monday–Friday 7am–6pm and Saturday 8am–4pm. For estimates or specific scheduling requests outside those hours, reach out directly and we'll do what we can to accommodate.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you work on condos and offices?<svg class="faq-arr" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><div class="faq-ai">Yes — condo and office painting are services we do regularly across Toronto and the GTA. We're experienced with building requirements, elevator bookings, noise restrictions, and tight turnaround timelines. Get in touch with your details and we'll work around your schedule.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="reveal">
+    <h2 style="font-family:var(--serif);font-size:clamp(1.85rem,3.3vw,2.65rem);color:#fff;margin-bottom:.8rem">Ready To <em style="font-style:italic;color:var(--gl)">Refresh</em> Your Home?</h2>
+    <p>Contact HomeRenoGTA today for a free estimate from a professional painting contractor serving Toronto and the GTA.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn btn-p">Get Free Estimate</a>
+      <a href="tel:6479360911" class="btn btn-olw">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Call Now
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="ci">
+        <div class="eyebrow reveal">Get In Touch</div>
+        <h2 class="st reveal d1">Let's Start Your<br><em>Painting Project</em></h2>
+        <p class="reveal d2">Fill out the form and we'll be in touch within one business day to arrange a free in-home estimate — anywhere across Toronto or the GTA.</p>
+        <div class="c-rows reveal d2">
+          <div class="c-row">
+            <div class="c-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+            <div><div class="c-lbl">Cell / WhatsApp</div><div class="c-val"><a href="tel:6479360911">(647) 936-0911</a></div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+            <div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:homerenogta2010@gmail.com">homerenogta2010@gmail.com</a></div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <div><div class="c-lbl">Address</div><div class="c-val">25 Cedarcroft Blvd., North York, Toronto, ON</div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-ico"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><div class="c-lbl">Hours</div><div class="c-val">Mon–Fri 7am–6pm · Sat 8am–4pm</div></div>
+          </div>
+        </div>
+        <a href="https://wa.me/16479360911" target="_blank" class="wa-btn reveal d3">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Message on WhatsApp
+        </a>
+        <div class="map-box reveal d3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.9!2d-79.434!3d43.762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s25+Cedarcroft+Blvd%2C+North+York%2C+ON!5e0!3m2!1sen!2sca!4v1" allowfullscreen="" loading="lazy" title="HomeRenoGTA – Painting Contractor Toronto"></iframe>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <form class="form" id="contactForm">
+          <div class="form-row">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="Jane" required/></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" required/></div>
+          </div>
+          <div class="form-row">
+            <div class="fg"><label>Email</label><input type="email" placeholder="jane@email.com" required/></div>
+            <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="(647) 000-0000"/></div>
+          </div>
+          <div class="fg">
+            <label>Service Needed</label>
+            <select>
+              <option value="">Select a service…</option>
+              <option>Interior Painting</option>
+              <option>Exterior Painting</option>
+              <option>Condo / Apartment Painting</option>
+              <option>Office Painting</option>
+              <option>Popcorn / Stucco Ceiling Removal</option>
+              <option>Drywall & Wall Repair</option>
+              <option>Surface Prep & Priming</option>
+              <option>Water Damage Repair</option>
+              <option>Multiple Services / Full Project</option>
+            </select>
+          </div>
+          <div class="fg"><label>Your City / Area</label><input type="text" placeholder="e.g. North York, Vaughan, Markham…"/></div>
+          <div class="fg"><label>Project Details</label><textarea placeholder="Describe your space, number of rooms, and preferred timeline…"></textarea></div>
+          <button type="submit" class="sub-btn">
+            Send Request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p id="fMsg">✓ Message sent — we'll be in touch within one business day.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div>
+      <a href="#" class="f-brand">HomeReno<span>GTA</span></a>
+      <div class="f-tagline">Professional Painting Services Across Toronto & GTA</div>
+      <p class="f-desc">Interior Painting · Exterior Painting · Condo Painting · Drywall Repair · Popcorn Ceiling Removal · Ceiling Repair<br><br>Serving Toronto, North York, Vaughan, Richmond Hill, Markham, Mississauga, Oakville and surrounding GTA areas since 2010.</p>
+      <p class="f-addr">25 Cedarcroft Blvd., North York, Toronto, ON<br>(647) 936-0911 · homerenogta2010@gmail.com</p>
+      <div class="f-socs">
+        <a href="#" class="f-soc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" class="f-soc" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://wa.me/16479360911" class="f-soc" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+    <div class="fc">
+      <h4>Services</h4>
+      <a href="#services">Interior Painting</a>
+      <a href="#services">Exterior Painting</a>
+      <a href="#services">Condo Painting</a>
+      <a href="#services">Office Painting</a>
+      <a href="#services">Popcorn Ceiling Removal</a>
+      <a href="#services">Drywall & Wall Repair</a>
+      <a href="#services">Water Damage Repair</a>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <a href="#about">About Us</a>
+      <a href="#projects">Recent Projects</a>
+      <a href="#process">Our Process</a>
+      <a href="#why">Why Choose Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:6479360911">(647) 936-0911</a>
+    </div>
+    <div class="fc">
+      <h4>Service Areas</h4>
+      <a href="#">Toronto & North York</a>
+      <a href="#">Vaughan & Woodbridge</a>
+      <a href="#">Markham & Richmond Hill</a>
+      <a href="#">Mississauga & Brampton</a>
+      <a href="#">Oakville & Burlington</a>
+      <a href="#">Ajax, Whitby & Oshawa</a>
+      <a href="#">Aurora & Newmarket</a>
+      <a href="#">Stouffville & Bolton</a>
+    </div>
+  </div>
+  <div class="f-seo-strip container">Toronto Painting Contractor · Interior Painting Toronto · Exterior Painting GTA · Condo Painting Toronto · Office Painting Toronto · Popcorn Ceiling Removal Toronto · Stucco Ceiling Removal GTA · Drywall Repair Toronto · Ceiling Repair Toronto · Water Damage Repair GTA · House Painting Toronto · Residential Painting Services · Professional Painters GTA · Painting Company North York · Vaughan Painting · Markham Painting · Mississauga Painting · Oakville Painting · Ajax Painting · Richmond Hill Painting · Scarborough Painting · Etobicoke Painting</div>
+  <div class="fb">
+    <span>© 2025 HomeRenoGTA · All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a></span>
+  </div>
+</footer>
+
+<script>
+// NAV
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>50),{passive:true});
+const ham=document.getElementById('ham'),mob=document.getElementById('mobNav'),mc=document.getElementById('mobClose');
+ham.onclick=()=>mob.classList.add('open');
+mc.onclick=()=>mob.classList.remove('open');
+mob.querySelectorAll('a').forEach(a=>a.onclick=()=>mob.classList.remove('open'));
+
+// SLIDER
+const slides=document.querySelectorAll('.slide'),dw=document.getElementById('slDots');
+let cur=0,slt;
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>go(i);dw.appendChild(d)});
+const dots=dw.querySelectorAll('.dot');
+function go(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=(n+slides.length)%slides.length;slides[cur].classList.add('active');dots[cur].classList.add('active')}
+function startAuto(){slt=setInterval(()=>go(cur+1),5800)}startAuto();
+document.getElementById('slPrev').onclick=()=>{clearInterval(slt);go(cur-1);startAuto()};
+document.getElementById('slNext').onclick=()=>{clearInterval(slt);go(cur+1);startAuto()};
+
+// REVEAL
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.onclick=()=>{
+    const open=btn.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(b=>{b.classList.remove('open');b.parentElement.querySelector('.faq-a').style.maxHeight='0'});
+    if(!open){btn.classList.add('open');btn.parentElement.querySelector('.faq-a').style.maxHeight=btn.parentElement.querySelector('.faq-a').scrollHeight+'px'}
+  }
+});
+
+// FORM
+document.getElementById('contactForm').onsubmit=e=>{
+  e.preventDefault();
+  const m=document.getElementById('fMsg');m.style.display='block';
+  e.target.reset();setTimeout(()=>m.style.display='none',7000);
+};
+</script>
+</body>
+</html>
